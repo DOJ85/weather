@@ -51,6 +51,7 @@ function startConverting() {
         }
       }
       var r = finalTranscripts + interimTranscripts;
+      console.log(finalTranscripts + interimTranscripts);
       //var filtered = r.replace(/quel temps fait-il à/g, "");
       var filtered = r.replace(new RegExp ('quel temps fait-il à' || 'comment est le temps à'), "");
 
