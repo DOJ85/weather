@@ -45,10 +45,10 @@ function startConverting() {
         transcript.replace("\n", "<br>");
         if(event.results[i].isFinal){
           finalTranscripts += transcript;
+          console.log(finalTranscripts + transcript);
 
         }else{
           interimTranscripts += transcript;
-          console.log(interimTranscripts + transcript);
         }
       }
       var r = finalTranscripts + interimTranscripts;
