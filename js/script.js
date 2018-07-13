@@ -131,6 +131,8 @@ function show(data){
           }
 
           var result = "<span class='color'>" + heure + " : " + min + "  " + "</span><span class='sec color'>" + sec + "</span>";
+          var voiceResult = heure + " heure " + min + " et " + sec + "secondes";
+
 
           return document.getElementById('horloge').innerHTML = result;
         }
@@ -308,17 +310,10 @@ function show(data){
     case 804:
       var test = "Il y a des nuages couverts"
       break;
-
-
-
   }
 
-  console.log(idWeather);
-
-
-
-
   //
+
   var lang = window.navigator.languages ? window.navigator.languages[0] : null;
       lang = lang || window.navigator.language || window.navigator.browserLanguage || window.navigator.userLanguage;
   if (lang.indexOf('-') !== -1)
@@ -338,7 +333,7 @@ function show(data){
           voice = "Spanish Female";
           break;
       case 'fr':
-          say = "Voila le temps actuel à " + data.name + " . " + test + " et il fait " + Math.round(data.main.temp) + " degrés. Le vent souffle à " + Math.round((data.wind.speed * 3.6)) + " kilomètres par heure, et l'humiditée est de " + data.main.humidity + "%";
+          say = "Voila le temps actuel à " + data.name + " . " + test + " et il fait " + Math.round(data.main.temp) + " degrés. Le vent souffle à " + Math.round((data.wind.speed * 3.6)) + " kilomètres par heure, l'humiditée est de " + data.main.humidity + "% et il est actuellement "
           voice = "French Female";
           break;
       default:
