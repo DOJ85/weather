@@ -48,10 +48,10 @@ function startConverting() {
 
         }else{
           interimTranscripts += transcript;
-          console.log(interimTranscripts);
         }
       }
       var r = finalTranscripts + interimTranscripts;
+      console.log(finalTranscripts + interimTranscripts);
       //var filtered = r.replace(/quel temps fait-il à/g, "");
       var filtered = r.replace(new RegExp ('quel temps fait-il à' || 'comment est le temps à'), "");
 
@@ -66,6 +66,12 @@ function startConverting() {
   }else{
     alert('Your browser is not supported. If google chrome, please upgrade');
   }
+}
+
+
+function activatedMic(){
+  document.getElementById('mic').style.color = "white";
+  startConverting();
 }
 
 
