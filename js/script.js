@@ -48,6 +48,7 @@ function startConverting() {
 
         }else{
           interimTranscripts += transcript;
+          console.log(interimTranscripts);
         }
       }
       var r = finalTranscripts + interimTranscripts;
