@@ -45,7 +45,6 @@ function startConverting() {
         transcript.replace("\n", "<br>");
         if(event.results[i].isFinal){
           finalTranscripts += transcript;
-          console.log(finalTranscripts += transcript);
 
         }else{
           interimTranscripts += transcript;
