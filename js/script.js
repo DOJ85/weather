@@ -146,172 +146,170 @@ function show(data){
       break;
     case 201:
       "Il y a de l'orage et de la pluie"
-      break
+      break;
     case 202:
       "Il y a de l'orage et des fortes pluies"
-      break
+      break;
     case 210:
       "Il y a de léger orages"
-      break
+      break;
     case 211:
       "Il y a de l'orage"
-      break
+      break;
     case 212:
       "Il y a de violents orages"
-      break
+      break;
     case 221:
       "Il y a des orages irréguliers"
-      break
+      break;
     case 230:
       "Il y a de l'orage avec une légère bruine"
-      break
+      break;
     case 231:
       "Il y a de l'orage avec de la bruine"
-      break
+      break;
     case 232:
       "Il y a de l'orage avec une bruine intense"
-      break
+      break;
 //
     case 300:
       "Il y a une légère bruine"
-      break
+      break;
     case 301:
       "Il y a de la bruine"
-      break
+      break;
     case 302:
       "Il y a une intense bruine"
-      break
+      break;
     case 310:
       "Il y a une légèrebruine de pluie"
-      break
+      break;
     case 311:
       "Il y a de la pluie bruine"
-      break
+      break;
     case 312:
       "Il y a une forte pluie bruine"
-      break
+      break;
     case 313:
       "Il y a une douche de pluie et de bruine"
-      break
+      break;
     case 314:
       "Il y a une forte douche de pluie et de bruine"
-      break
+      break;
     case 321:
       "Il y a une pluie de bruine"
-      break
+      break;
 //
     case 500:
       "Il y a de la pluie légère"
-      break
+      break;
     case 501:
       "Il y a de la pluie modéré";
-      break
+      break;
     case 502:
       "Il y a une plue intense"
-      break
+      break;
     case 503:
       "Il y a une très forte pluie"
-      break
+      break;
     case 504:
       "Il y a une pluie extrème"
-      break
+      break;
     case 511:
       "Il y a de la pluie gelée"
-      break
+      break;
     case 520:
       "Il y a une légère intensitée de pluie"
-      break
+      break;
     case 521:
       "Il y a des cordes de pluie"
-      break
+      break;
     case 522:
       "Il y a d'intenses cordes de pluie"
-      break
+      break;
     case 51:
       "Il y a de la pluie irrégulière"
-      break
+      break;
 //
     case 600:
       "Il y a de la neige légère"
-      break
+      break;
     case 601:
       "Il y a de la neige"
-      break
+      break;
     case 602:
       "Il y a de beaucoup de neige"
-      break
+      break;
     case 611:
       "Il y a de la neige fondu"
-      break
+      break;
     case 612:
       "Il y a beaucoup de neige fondu"
-      break
+      break;
     case 615:
       "Il y a de la neige légère et un peut de pluie"
-      break
+      break;
     case 616:
       "Il y a de la pluie et de la neige"
-      break
+      break;
     case 620:
       "Il y a une légère tombée de neige"
-      break
+      break;
     case 621:
       "Il y a une tombée de neige"
-      break
+      break;
     case 622:
       "Il y a une grosse tombée de neige"
-      break
+      break;
 //
     case 701:
       "Il y a du brouillard"
-      break
+      break;
     case 711:
       "Il y a de la fummée"
-      break
+      break;
     case 721:
       "Il y a de la brume"
-      break
+      break;
     case 731:
       "Il y a du sable et des tourbillons de sable"
-      break
+      break;
     case 741:
       "Il y a un épais brouillard"
-      break
+      break;
     case 751:
       "Il y a du sable dans l'air"
-      break
+      break;
     case 761:
       "Il y a de la poussière dans l'air"
-      break
+      break;
     case 762:
       "Il y a de la cendre volcanique dans l'air"
-      break
+      break;
     case 771:
       "Il y a des bourrasques de vent"
-      break
+      break;
     case 781:
       "Il y a une tornade"
-      break
+      break;
 //
     case 800:
       "Le ciel est dégagé"
-      break
+      break;
     case 801:
       "Il y a quelques nuages"
-      break
+      break;
     case 802:
       "Il y a des nuages dégagés"
-      break
+      break;
     case 803:
       "Il y a des nuages brisés"
-      break
+      break;
     case 804:
       "Il y a des nuages couverts"
-      break
+      break;
 
 
-    default:
-      console.log("Sorry, i don't know");
 
   }
 
@@ -339,7 +337,7 @@ function show(data){
           voice = "Spanish Female";
           break;
       case 'fr':
-          say = "Voila le temps actuel à " + data.name + "." + idWeather + " et il fait " + data.main.temp + " degrés. Le vent souffle à " + (data.wind.speed * 3.6).toFixed(2) + " et l'humiditée est de " + data.main.humidity + "%";
+          say = "Voila le temps actuel à " + data.name + " . " + idWeather + " et il fait " + data.main.temp + " degrés. Le vent souffle à " + (data.wind.speed * 3.6).toFixed(2) + " kilomètres par heure, et l'humiditée est de " + data.main.humidity + "%";
           voice = "French Female";
           break;
       default:
