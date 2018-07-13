@@ -138,6 +138,108 @@ function show(data){
     });
   });
 
+  // var idWeather = data.weather[0].id;
+//   switch (idWeather) {
+// //
+//     case 200:
+//       "il y a de l'orage avec une légère pluie"
+//       break;
+//     case 201:
+//       "Il y a de l'orage et de la pluie"
+//       break
+//     case 202:
+//       "Il y a de l'orage et des fortes pluies"
+//       break
+//     case 210:
+//       "Il y a de léger orages"
+//       break
+//     case 211:
+//       "Il y a de l'orage"
+//       break
+//     case 212:
+//       "Il y a de violents orages"
+//       break
+//     case 221:
+//       "Il y a des orages irréguliers"
+//       break
+//     case 230:
+//       "Il y a de l'orage avec une légère bruine"
+//       break
+//     case 231:
+//       "Il y a de l'orage avec de la bruine"
+//       break
+//     case 232:
+//       "Il y a de l'orage avec une bruine intense"
+//       break
+// //
+//     case 300:
+//       "Il y a une légère bruine"
+//       break
+//     case 301:
+//       "Il y a de la bruine"
+//       break
+//     case 302:
+//       "Il y a une intense bruine"
+//       break
+//     case 310:
+//       "Il y a une légèrebruine de pluie"
+//       break
+//     case 311:
+//       "Il y a de la pluie bruine"
+//       break
+//     case 312:
+//       "Il y a une forte pluie bruine"
+//       break
+//     case 313:
+//       "Il y a une douche de pluie et de bruine"
+//       break
+//     case 314:
+//       "Il y a une forte douche de pluie et de bruine"
+//       break
+//     case 321:
+//       "Il y a une pluie de bruine"
+//       break
+// //
+//     case 500:
+//       "Il y a de la pluie légère"
+//       break
+//     case 501:
+//       "Il y a de la pluie modéré";
+//       break
+//     case 502:
+//       "Il y a une plue intense"
+//       break
+//     case 503:
+//       "Il y a une très forte pluie"
+//       break
+//     case 504:
+//       "Il y a une pluie extrème"
+//       break
+//     case 511:
+//       "Il y a de la pluie gelée"
+//       break
+//     case 520:
+//       "Il y a une légère intensitée de pluie"
+//       break
+//     case 521:
+//       "Il y a des cordes de pluie"
+//       break
+//     case 522:
+//       "Il y a d'intenses cordes de pluie"
+//       break
+//     case 51:
+//       "Il y a de la pluie irrégulière"
+//       break
+// //
+//     case 600:
+//       "Il y a deWWWWWWWWWWWWWW"
+//       break
+//
+//
+//     default:
+//
+//   }
+
   //
 
   return  "<h3 class='color'>Current Weather for: <span class='color'>" + data.name + ", " + data.sys.country + "</span></h3>" +
