@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- TimeZoneDB API Key      P3TADJB69A46  (http://api.timezonedb.com/v2/list-time-zone?key=P3TADJB69A46&format=json&country=fr) -->
+  <!--  Google Timezone API       AIzaSyDiPk7ZGdrEUQ8SJIpw0AcFP8vcPUxi2o8   -->
+  <!-- http://api.openweathermap.org/data/2.5/weather?q=nesmy&APPID=62133f60aa740596c21f37130a69970c&units=metric -->
+  <!-- https://maps.googleapis.com/maps/api/timezone/json?location="   +  gpsCoord   +  "&timestamp="      +  seconds   +     // Doit etre 10 chiffres //  +  timeStampInMs  +  "&key=AIzaSyDiPk7ZGdrEUQ8SJIpw0AcFP8vcPUxi2o8"  -->
+    <!-- https://maps.googleapis.com/maps/api/timezone/json?location="   +  gpsCoord   +  "&timestamp="  +  seconds   +    "&key=AIzaSyDiPk7ZGdrEUQ8SJIpw0AcFP8vcPUxi2o8"  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="icon" href="image/logo1.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Weather API</title>
+</head>
+<body id="random" onload="randombg()">
+  <div id="result"></div>
+  <section class="all">
+
+
+    <div class="titre">
+      <h1 class="color">Enter City Name <span class="icon"><i onClick="activatedMic()" id="mic" class="fas fa-microphone"></i></span></h1>
+    </div>
+
+    <div class="info">
+      <input type="text" name="city" class="color" id="city" placeholder="City Name">
+      <button class="color" id="submitWeather">Search City</button>
+    </div>
+    <!-- <div class="choice">
+      <ul>
+        <li class="actual color"><a href="#">Actual Weather</a></li>
+        <li class="forecast color"><a href="#">Forecast</a></li>
+      </ul>
+    </div> -->
+    <div id="show">
+
+    </div>
+<center id="horloge">
+
+</center>
+  </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

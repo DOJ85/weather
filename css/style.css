@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .85);
+  background: -webkit-linear-gradient(to bottom, #434343, #000000);
+  background: linear-gradient(to bottom, #434343, #000000); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+}
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  background-position: 50% 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.color::selection{
+  color: grey;
+}
+
+
+.all {
+  background-color: rgba(0, 0, 0, .65);
+  padding: 50px;
+  overflow: auto;
+}
+
+
+.icon {
+  margin-left: 25px;
+  color: rgba(255, 255, 255, .35);
+}
+.icon.white {
+  color: #fff;
+}
+
+
+.titre {
+  display: flex;
+  justify-content: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+
+}
+
+
+.titre h1 {
+  margin: 20px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  text-align: center;
+  min-width: 246px;
+}
+
+
+.info {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  margin: 0 auto 25px;
+  max-width: 249px;
+}
+
+
+.weatherTitle {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #fff;
+  border-width: 50%;
+}
+
+.choice ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.choice ul li a {
+  color: #828282;
+  display: inline;
+  font-size: 12px;
+  background: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  text-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+.choice ul li a:focus {
+  color: #fff;
+  font-size: 13px;
+}
+
+.actual {
+  margin-right: 23%;
+}
+.sec {
+  font-size: 12px;
+}
+
+
+#show {
+  display: flex;
+  justify-content: center;
+  display: block;
+  text-align: center;
+  line-height: 31px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+
+#show span {
+  font-weight: lighter;
+  font-size: 20px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+
+#city {
+  background-color: rgba(255, 255, 255, .59);
+  border: none;
+  padding: 5px;
+  outline: none;
+}
+
+
+#city::placeholder {
+  color: rgba(0, 0, 0, .75);
+}
+
+
+#submitWeather {
+  background-color: rgba(255, 255, 255, .75);
+  border: none;
+  padding: 0 10px;
+  min-width: 89px;
+  outline-color: rgba(0, 0, 0, .5);
+}
+
+
+#horloge {
+  /* text-align: center; */
+  margin: 0 auto;
+  font-size: 46px;
+  font-weight: 100;
+  margin-top: 15px;
+}
