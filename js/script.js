@@ -42,13 +42,13 @@ function startConverting() {
       var interimTranscripts = '';
       for(var i = event.resultIndex; i < event.results.length; i++){
         var transcript = event.results[i][0].transcript;
-        console.log(transcript);
         transcript.replace("\n", "<br>");
         if(event.results[i].isFinal){
           finalTranscripts += transcript;
 
         }else{
           interimTranscripts += transcript;
+          console.log(interimTranscripts + transcript);
         }
       }
       var r = finalTranscripts + interimTranscripts;
