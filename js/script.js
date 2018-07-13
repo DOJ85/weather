@@ -42,6 +42,7 @@ function startConverting() {
       var interimTranscripts = '';
       for(var i = event.resultIndex; i < event.results.length; i++){
         var transcript = event.results[i][0].transcript;
+        console.log(transcript);
         transcript.replace("\n", "<br>");
         if(event.results[i].isFinal){
           finalTranscripts += transcript;
@@ -58,8 +59,6 @@ function startConverting() {
       console.log(filtered);
       document.getElementById("city").value = filtered;
       document.getElementById("submitWeather").click();
-
-      console.log(finalTranscripts + interimTranscripts + interimResults);
     };
 
     speechRecognizer.onerror = function (event) {
