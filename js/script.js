@@ -35,6 +35,12 @@ function startConverting() {
     speechRecognizer.interimResults = false; //False
     speechRecognizer.lang = 'fr-FR';
     speechRecognizer.start();
+console.log( interimTranscripts);
+console.log(finalTranscripts += transcript);
+console.log(interimTranscripts += transcript);
+console.log(interimTranscripts += transcript);
+console.log(finalTranscripts + interimTranscripts);
+
 
     var finalTranscripts = '';
 
@@ -51,8 +57,6 @@ function startConverting() {
         }
       }
       var r = finalTranscripts + interimTranscripts;
-      console.log(finalTranscripts + interimTranscripts);
-      console.log(finalTranscripts + interimTranscripts);
       //var filtered = r.replace(/quel temps fait-il à/g, "");
       var filtered = r.replace(new RegExp ('quel temps fait-il à' || 'comment est le temps à'), "");
 
@@ -75,11 +79,6 @@ function activatedMic(){
   startConverting();
 }
 
-
-function activatedMic(){
-  document.getElementById('mic').style.color = "white";
-  startConverting();
-}
 
 
 //    ---                                                        E n t e r    b u t t o n
