@@ -333,7 +333,8 @@ function show(data){
           voice = "Spanish Female";
           break;
       case 'fr':
-          say = "Voila le temps actuel à " + data.name + " . " + test + " et il fait " + Math.round(data.main.temp) + " degrés. Le vent souffle à " + Math.round((data.wind.speed * 3.6)) + " kilomètres par heure, l'humiditée est de " + data.main.humidity + "% et il est actuellement "
+          say = "Voila le temps actuel à " + data.name + " . " + test + " et il fait " + Math.round(data.main.temp) + " degrés. Le vent souffle à " + Math.round((data.wind.speed * 3.6)) +
+           " kilomètres par heure, l'humiditée est de " + data.main.humidity + "% et il est actuellement " + document.getElementById('horloge')
           voice = "French Female";
           break;
       default:
