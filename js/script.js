@@ -42,7 +42,6 @@ function startConverting() {
       var interimTranscripts = '';
       for(var i = event.resultIndex; i < event.results.length; i++){
         var transcript = event.results[i][0].transcript;
-        console.log(transcript);
         transcript.replace("\n", "<br>");
         if(event.results[i].isFinal){
           finalTranscripts += transcript;
@@ -52,6 +51,7 @@ function startConverting() {
         }
       }
       var r = finalTranscripts + interimTranscripts;
+      console.log(r);
       //var filtered = r.replace(/quel temps fait-il à/g, "");
       var filtered = r.replace(new RegExp ('quel temps fait-il à' || 'comment est le temps à'), "");
 
