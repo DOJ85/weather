@@ -35,12 +35,6 @@ function startConverting() {
     speechRecognizer.interimResults = false; //False
     speechRecognizer.lang = 'fr-FR';
     speechRecognizer.start();
-console.log( interimTranscripts);
-console.log(finalTranscripts += transcript);
-console.log(interimTranscripts += transcript);
-console.log(interimTranscripts += transcript);
-console.log(finalTranscripts + interimTranscripts);
-
 
     var finalTranscripts = '';
 
@@ -78,7 +72,6 @@ function activatedMic(){
   document.getElementById('mic').style.color = "white";
   startConverting();
 }
-
 
 
 //    ---                                                        E n t e r    b u t t o n
