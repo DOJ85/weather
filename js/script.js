@@ -48,10 +48,10 @@ function startConverting() {
 
         }else{
           interimTranscripts += transcript;
+          console.log(interimTranscripts + transcript);
         }
       }
       var r = finalTranscripts + interimTranscripts;
-      console.log(r);
       //var filtered = r.replace(/quel temps fait-il à/g, "");
       var filtered = r.replace(new RegExp ('quel temps fait-il à' || 'comment est le temps à'), "");
 
