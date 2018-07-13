@@ -59,12 +59,7 @@ function startConverting() {
       document.getElementById("city").value = filtered;
       document.getElementById("submitWeather").click();
 
-console.log(finalTranscripts);
-console.log(interimTranscripts);
-console.log(finalTranscripts += transcript);
-console.log(interimTranscripts += transcript);
-console.log(finalTranscripts + interimTranscripts);
-
+      console.log(finalTranscripts + interimTranscripts + interimResults);
     };
 
     speechRecognizer.onerror = function (event) {
