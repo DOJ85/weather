@@ -40,12 +40,12 @@ function startConverting() {
 
     speechRecognizer.onresult = function(event){
       var interimTranscripts = '';
+      console.log(interimTranscripts);
       for(var i = event.resultIndex; i < event.results.length; i++){
         var transcript = event.results[i][0].transcript;
         transcript.replace("\n", "<br>");
         if(event.results[i].isFinal){
           finalTranscripts += transcript;
-          console.log(finalTranscripts + transcript);
 
         }else{
           interimTranscripts += transcript;
