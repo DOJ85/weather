@@ -316,10 +316,38 @@ function show(data){
   }
 
 
-responsiveVoice.speak("Voila le temps actuel à" data.city.name "." idWeather " et il fait " data.main.temp ". Le vent souffle à " (data.wind.speed * 3.6).toFixed(2) " et l"humiditée est de " data.main.humidity);
+
 
 
   //
+  var lang = window.navigator.languages ? window.navigator.languages[0] : null;
+      lang = lang || window.navigator.language || window.navigator.browserLanguage || window.navigator.userLanguage;
+  if (lang.indexOf('-') !== -1)
+      lang = lang.split('-')[0];
+  if (lang.indexOf('_') !== -1)
+      lang = lang.split('_')[0];
+  console.log(lang);
+  var say = 'Hello';
+  var voice = 'UK English Female';
+  switch (lang) {
+      case 'en':
+          say = "Hello";
+          voice = "UK English Female";
+          break;
+      case 'es':
+          say = "Hola";
+          voice = "Spanish Female";
+          break;
+      case 'fr':
+          say = "Voila le temps actuel à " + data.name + "." + idWeather + " et il fait " + data.main.temp + " degrés. Le vent souffle à " + (data.wind.speed * 3.6).toFixed(2) + " et l'humiditée est de " + data.main.humidity + "%";
+          voice = "French Female";
+          break;
+      default:
+          say = "Hello";
+          voice = "UK English Female";
+          break;
+  }
+  setTimeout(responsiveVoice.speak(say, voice),15000);
 
   return  "<h3 class='color'>Current Weather for: <span class='color'>" + data.name + ", " + data.sys.country + "</span></h3>" +
   "<h3 class='color'>Temperature: <span class='color'>" + data.main.temp + "°C</span></h3>" +
